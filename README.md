@@ -1,7 +1,5 @@
 # Delphi Evidence Desk
-A standard-library Python tool for validating source-grounded evidence packets and tracking a durable local submission outbox.
-
-It checks market identity, deadlines, source dates, rights-review flags and packet bounds; renders a reviewable note; and reserves an idempotent local record before an explicitly integrated external adapter is used.
+Check a market evidence packet before submitting it elsewhere. The Python CLI checks the market ID, deadline, source dates, rights-review flags, and packet limits. It produces a review note and records a local reservation without duplicating an existing one. It does not submit the packet.
 
 Python 3.10+; no packages are required.
 ~~~sh
